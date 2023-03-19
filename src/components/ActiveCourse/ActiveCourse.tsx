@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import classNames from 'classnames';
 import React, { useState } from 'react';
 import ReactHLS from 'react-hls';
@@ -13,8 +12,6 @@ type Props = {
 };
 
 export const ActiveCourse: React.FC<Props> = ({ activeCourse }) => {
-  // const [activeLessonVideo, setActiveLessonVideo] = useState<string>('');
-  // const [activeLessonImage, setActiveLessonImage] = useState<string>('');
   const [lockedMessage, setLockedMessage] = useState<boolean>(false);
   const [lockedLessonId, setLockedLesonId] = useState<string>('');
   const { actualLesson } = useAppSelector(state => state.actualLesson);
@@ -36,10 +33,8 @@ export const ActiveCourse: React.FC<Props> = ({ activeCourse }) => {
 
   const checkLink = (lesson: Lesson) => {
     if (lesson.link) {
-      // setActiveLessonVideo(lesson.link);
       dispatch(actualLessonActions.setActualLesson(lesson));
     } else {
-      // setActiveLessonImage(`${lesson.previewImageLink}/lesson-${lesson.order}.webp`);
       dispatch(actualLessonActions.setActualLesson(lesson));
     }
   };
