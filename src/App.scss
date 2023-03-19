@@ -1,3 +1,28 @@
-.starter {
-  font-size: 18px;
+* {
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.App {
+  font-family: 'Montserrat', sans-serif;
+  min-width: 1196px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1136px;
+  overflow: hidden;
+  margin-bottom: 80px;
+  min-height: calc(100vh - 96px - 64px - 80px);
+}
+
+.logo {
+  width: 40px;
+  height: 11px;
+}
+
+.icon {
+  height: 16px;
+  width: 16px;
 }

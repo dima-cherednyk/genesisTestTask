@@ -1,0 +1,86 @@
+.courseItem {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  border: 1px solid #e2e6e9;
+  height: 135px;
+  width: 1136px;
+  padding: 0 25px;
+  position: relative;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 120px;
+  }
+
+  &__name {
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #313237;
+    min-width: 295px;
+    width: 295px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #313237;
+    width: 100px;
+    gap: 5px;
+  }
+
+  &__skills {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #313237;
+    width: 50px;
+  }
+
+  &__skillsList {
+    padding-left: 20px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    color: #313237;
+    width: 270px;
+  }
+
+  &__button {
+    position: absolute;
+    right: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 174px;
+    background: #313237;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: white;
+
+    &--added {
+      background-color: white;
+      border: 1px solid #e2e6e9;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      color: #27ae60;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 13px rgba(23, 32, 49, 0.26);
+    }
+  }
+}

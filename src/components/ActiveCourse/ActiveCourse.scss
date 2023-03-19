@@ -1,0 +1,89 @@
+.activeCourse {
+  display: flex;
+  gap: 30px;
+
+  &__image {
+    width: 500px;
+    height: 300px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__lessons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: none;
+    padding-left: 15px;
+  }
+
+  &__lesson {
+    display: flex;
+    align-items: center;
+  }
+
+  &__isPlaying {
+    width: 22px;
+    height: 22px;
+  }
+
+  &__button {
+    display: flex;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #89939a;
+    outline: none;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+
+    &--locked {
+      color: #313237;;
+    }
+  }
+
+  &__lockedMessage {
+    position: absolute;
+    bottom: 25px;
+    left: 70px;
+    display: flex;
+    align-items: center;
+    background-color: #414244;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 15px;
+    padding: 7px;
+    z-index: 1;
+
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      left: 30px;
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 10px solid #414244;
+    }
+  }
+
+  &__activeLesson {
+    margin-left: 10px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

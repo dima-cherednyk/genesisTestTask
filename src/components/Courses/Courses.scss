@@ -1,0 +1,28 @@
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__title {
+    margin-top: 24px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    color: #313237;
+    margin-bottom: 24px;
+  }
+
+  &__main {
+    display: flex;
+    gap: 16px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    list-style-type: none;
+    padding: 0;
+  }
+}

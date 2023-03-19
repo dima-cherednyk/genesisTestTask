@@ -1,0 +1,23 @@
+.error {
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    letter-spacing: -0.01em;
+    color: #313237;
+    margin-bottom: 40px;
+  }
+
+  &__message {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    color: #313237;
+    margin-bottom: 25px;
+  }
+}
